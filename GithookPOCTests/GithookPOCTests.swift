@@ -25,7 +25,7 @@ class GithookPOCTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
 //        XCTAssertEqual(11, 95, "Score computed")//Failing
-        XCTAssertEqual(11, 13, "Score computed")
+        XCTAssertEqual(11, 12, "Score computed")
     }
 
 //    func testPerformanceExample() throws {
