@@ -14,6 +14,9 @@
 		0CA0943028C65928003E6806 /* GithookPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0942F28C65928003E6806 /* GithookPOCTests.swift */; };
 		0CA0943A28C65928003E6806 /* GithookPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0943928C65928003E6806 /* GithookPOCUITests.swift */; };
 		0CA0943C28C65928003E6806 /* GithookPOCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0943B28C65928003E6806 /* GithookPOCUITestsLaunchTests.swift */; };
+		2A4D7FA6448E4B629ED86D01 /* Pods_GithookPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CF2316862EEF25D946111 /* Pods_GithookPOC.framework */; };
+		590E414CA8D494849082BA82 /* Pods_GithookPOC_GithookPOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3787FD9A63A025D5BE12CFE /* Pods_GithookPOC_GithookPOCUITests.framework */; };
+		9CABD278CE3547D32C278CB9 /* Pods_GithookPOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F945F572458DF5FA1793128F /* Pods_GithookPOCTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,15 @@
 		0CA0943528C65928003E6806 /* GithookPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithookPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA0943928C65928003E6806 /* GithookPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithookPOCUITests.swift; sourceTree = "<group>"; };
 		0CA0943B28C65928003E6806 /* GithookPOCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithookPOCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		672CF2316862EEF25D946111 /* Pods_GithookPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithookPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6820FECA4A016694AFDE1DC1 /* Pods-GithookPOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithookPOCTests.release.xcconfig"; path = "Target Support Files/Pods-GithookPOCTests/Pods-GithookPOCTests.release.xcconfig"; sourceTree = "<group>"; };
+		69CEA3859E77D6BC93578222 /* Pods-GithookPOC-GithookPOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithookPOC-GithookPOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-GithookPOC-GithookPOCUITests/Pods-GithookPOC-GithookPOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81B630019B8B8780F3B895BD /* Pods-GithookPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithookPOC.debug.xcconfig"; path = "Target Support Files/Pods-GithookPOC/Pods-GithookPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		8BAFD2A98E9E36F7E92C5743 /* Pods-GithookPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithookPOC.release.xcconfig"; path = "Target Support Files/Pods-GithookPOC/Pods-GithookPOC.release.xcconfig"; sourceTree = "<group>"; };
+		B94D3A05062B40DEE9E549F1 /* Pods-GithookPOC-GithookPOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithookPOC-GithookPOCUITests.release.xcconfig"; path = "Target Support Files/Pods-GithookPOC-GithookPOCUITests/Pods-GithookPOC-GithookPOCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8D6304B7AF3A0CC067E7678 /* Pods-GithookPOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithookPOCTests.debug.xcconfig"; path = "Target Support Files/Pods-GithookPOCTests/Pods-GithookPOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3787FD9A63A025D5BE12CFE /* Pods_GithookPOC_GithookPOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithookPOC_GithookPOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F945F572458DF5FA1793128F /* Pods_GithookPOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithookPOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4D7FA6448E4B629ED86D01 /* Pods_GithookPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CABD278CE3547D32C278CB9 /* Pods_GithookPOCTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +79,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590E414CA8D494849082BA82 /* Pods_GithookPOC_GithookPOCUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C06F63AFFDACBDA5D30828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				672CF2316862EEF25D946111 /* Pods_GithookPOC.framework */,
+				F3787FD9A63A025D5BE12CFE /* Pods_GithookPOC_GithookPOCUITests.framework */,
+				F945F572458DF5FA1793128F /* Pods_GithookPOCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0CA0941228C65926003E6806 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +103,8 @@
 				0CA0942E28C65928003E6806 /* GithookPOCTests */,
 				0CA0943828C65928003E6806 /* GithookPOCUITests */,
 				0CA0941C28C65926003E6806 /* Products */,
+				EB5BB0E482552F38D6F347D3 /* Pods */,
+				02C06F63AFFDACBDA5D30828 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +154,20 @@
 			path = GithookPOCUITests;
 			sourceTree = "<group>";
 		};
+		EB5BB0E482552F38D6F347D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81B630019B8B8780F3B895BD /* Pods-GithookPOC.debug.xcconfig */,
+				8BAFD2A98E9E36F7E92C5743 /* Pods-GithookPOC.release.xcconfig */,
+				69CEA3859E77D6BC93578222 /* Pods-GithookPOC-GithookPOCUITests.debug.xcconfig */,
+				B94D3A05062B40DEE9E549F1 /* Pods-GithookPOC-GithookPOCUITests.release.xcconfig */,
+				D8D6304B7AF3A0CC067E7678 /* Pods-GithookPOCTests.debug.xcconfig */,
+				6820FECA4A016694AFDE1DC1 /* Pods-GithookPOCTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CA0943F28C65928003E6806 /* Build configuration list for PBXNativeTarget "GithookPOC" */;
 			buildPhases = (
+				A439A92FA4EB71FB8FBD1DAA /* [CP] Check Pods Manifest.lock */,
 				0CA0941728C65926003E6806 /* Sources */,
 				0CA0941828C65926003E6806 /* Frameworks */,
 				0CA0941928C65926003E6806 /* Resources */,
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CA0944228C65928003E6806 /* Build configuration list for PBXNativeTarget "GithookPOCTests" */;
 			buildPhases = (
+				77545404DD1D02574C872FFB /* [CP] Check Pods Manifest.lock */,
 				0CA0942728C65928003E6806 /* Sources */,
 				0CA0942828C65928003E6806 /* Frameworks */,
 				0CA0942928C65928003E6806 /* Resources */,
@@ -169,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CA0944528C65928003E6806 /* Build configuration list for PBXNativeTarget "GithookPOCUITests" */;
 			buildPhases = (
+				B0A155CFE2A96B31610947EB /* [CP] Check Pods Manifest.lock */,
 				0CA0943128C65928003E6806 /* Sources */,
 				0CA0943228C65928003E6806 /* Frameworks */,
 				0CA0943328C65928003E6806 /* Resources */,
@@ -251,6 +295,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77545404DD1D02574C872FFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithookPOCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A439A92FA4EB71FB8FBD1DAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithookPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A155CFE2A96B31610947EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithookPOC-GithookPOCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0CA0941728C65926003E6806 /* Sources */ = {
@@ -411,6 +524,7 @@
 		};
 		0CA0944028C65928003E6806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B630019B8B8780F3B895BD /* Pods-GithookPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,6 +553,7 @@
 		};
 		0CA0944128C65928003E6806 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BAFD2A98E9E36F7E92C5743 /* Pods-GithookPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,6 +582,7 @@
 		};
 		0CA0944328C65928003E6806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D6304B7AF3A0CC067E7678 /* Pods-GithookPOCTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +602,7 @@
 		};
 		0CA0944428C65928003E6806 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6820FECA4A016694AFDE1DC1 /* Pods-GithookPOCTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +622,7 @@
 		};
 		0CA0944628C65928003E6806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CEA3859E77D6BC93578222 /* Pods-GithookPOC-GithookPOCUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +640,7 @@
 		};
 		0CA0944728C65928003E6806 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B94D3A05062B40DEE9E549F1 /* Pods-GithookPOC-GithookPOCUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_GithookPOCTests {
+  umbrella header "Pods-GithookPOCTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

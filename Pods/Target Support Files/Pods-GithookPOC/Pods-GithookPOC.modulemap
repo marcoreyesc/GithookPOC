@@ -1,0 +1,6 @@
+framework module Pods_GithookPOC {
+  umbrella header "Pods-GithookPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
