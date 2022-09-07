@@ -17,7 +17,7 @@ if [[ -e "${SWIFT_LINT}" ]]; then
         exit 0
     fi
 
-    echo "Found $count lintable files! Linting now.."
+    #echo "Found $count lintable files! Linting now.."
     $SWIFT_LINT --use-script-input-files --strict --config .swiftlint.yml
     RESULT=$? # swiftline exit value is number of errors
 
@@ -26,7 +26,7 @@ if [[ -e "${SWIFT_LINT}" ]]; then
     fi
     exit $RESULT
 else
-    echo "⚠️  WARNING: SwiftLint not found in $SWIFT_LINT"
-    echo "⚠️  You might want to edit .git/hooks/pre-commit to locate your swiftlint"
+    #echo "⚠️  WARNING: SwiftLint not found in $SWIFT_LINT"
+    #echo "⚠️  You might want to edit .git/hooks/pre-commit to locate your swiftlint"
     exit 0
 fi
