@@ -12,18 +12,10 @@ if [[ -e "${SWIFT_LINT}" ]]; then
     done < <(git diff --name-only --cached --diff-filter=d | grep ".swift$")
     export SCRIPT_INPUT_FILE_COUNT=$count
 
-    if [ "$count" -eq 0 ]; then
-        echo "No files to lint!"
-        exit 0
-    fi
-
     #echo "Found $count lintable files! Linting now.."
     $SWIFT_LINT --use-script-input-files --strict --config .swiftlint.yml
     RESULT=$? # swiftline exit value is number of errors
 
-    if [ $RESULT -eq 0 ]; then
-        echo "🎉  Well done. No violation."
-    fi
     exit $RESULT
 else
     #echo "⚠️  WARNING: SwiftLint not found in $SWIFT_LINT"
