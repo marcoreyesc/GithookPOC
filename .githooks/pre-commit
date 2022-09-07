@@ -4,21 +4,21 @@ PROJECT_ROOT=$(git rev-parse --show-toplevel)
 
 #Comenta la seccion de codigo que quieras deshabilitar 
 
-echo "Running branch name validation"
+#echo "Running branch name validation"
 source $PROJECT_ROOT/.githooks/scripts/run-name_validation.sh
 if [ $? -ne 0 ]; then
  echo "Branch name is wrong"
  exit 1
 fi
 
-echo "Running swiftlint hook.."
+#echo "Running swiftlint hook.."
 source $PROJECT_ROOT/.githooks/scripts/run-swiftlint.bash
 if [ $? -ne 0 ]; then
  echo "SwiftLint has warnings"
  exit 1
 fi
 
-echo "Running unit tests"
+#echo "Running unit tests"
 source $PROJECT_ROOT/.githooks/scripts/run-tests.bash
 if [ $? -ne 0 ]; then
  echo "Tests must pass before commit!"
