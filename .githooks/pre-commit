@@ -12,11 +12,11 @@ if [ $? -ne 0 ]; then
 fi
 
 #echo "Running swiftlint hook.."
-source $PROJECT_ROOT/.githooks/scripts/run-swiftlint.bash
-if [ $? -ne 0 ]; then
- echo "SwiftLint has warnings"
- exit 1
-fi
+#source $PROJECT_ROOT/.githooks/scripts/run-swiftlint.bash
+#if [ $? -ne 0 ]; then
+# echo "SwiftLint has warnings"
+# exit 1
+#fi
 
 #echo "Running unit tests"
 source $PROJECT_ROOT/.githooks/scripts/run-tests.bash
