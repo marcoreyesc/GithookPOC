@@ -7,7 +7,7 @@ xcodebuild \
   -scheme GithookPOCTests \
   -sdk iphonesimulator \
   -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.5' \
-  test
+  test 2> $PROJECT_ROOT/.githooks/output/tests.result
 if [ $? -ne 0 ]; then
   echo "Test failed"
   exit 1
