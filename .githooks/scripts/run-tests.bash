@@ -8,7 +8,6 @@ xcodebuild \
   -sdk iphonesimulator \
   -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.5' \
   -quiet \
-  -archivePath $PROJECT_ROOT/.githooks/output/testss.result \
   test
 if [ $? -ne 0 ]; then
   echo "Test failed"
