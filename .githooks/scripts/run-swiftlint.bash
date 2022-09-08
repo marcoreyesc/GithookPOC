@@ -11,9 +11,6 @@ if [[ -e "${SWIFT_LINT}" ]]; then
         count=$((count + 1))
     done < <(git diff --name-only --cached --diff-filter=d | grep ".swift$")
     export SCRIPT_INPUT_FILE_COUNT=$count
-    if [ "$count" -eq 0 ]; then
-        exit 0
-    fi
     #echo "Found $count lintable files! Linting now.."
     if ["$count" -ne 0]; then
         $SWIFT_LINT \

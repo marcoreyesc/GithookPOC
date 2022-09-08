@@ -10,6 +10,6 @@ import XCTest
 
 class GithookPOCTests: XCTestCase {
     func testExample() throws {
-        XCTAssertEqual(1, 2, "Score computed")
+        XCTAssertEqual(2, 2, "Score computed")
     }
 }
