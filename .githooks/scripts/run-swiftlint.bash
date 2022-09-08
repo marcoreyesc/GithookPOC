@@ -13,7 +13,7 @@ if [[ -e "${SWIFT_LINT}" ]]; then
     export SCRIPT_INPUT_FILE_COUNT=$count
 
     #echo "Found $count lintable files! Linting now.."
-    $SWIFT_LINT --use-script-input-files --strict --config .swiftlint.yml
+    $SWIFT_LINT --quiet --use-script-input-files --strict --config .swiftlint.yml
     RESULT=$? # swiftline exit value is number of errors
 
     exit $RESULT
