@@ -12,7 +12,7 @@ if [[ -e "${SWIFT_LINT}" ]]; then
     done < <(git diff --name-only --cached --diff-filter=d | grep ".swift$")
     export SCRIPT_INPUT_FILE_COUNT=$count
     #echo "Found $count lintable files! Linting now.."
-    if ["$count" -ne 0]; then
+    if [ $count -ne 0 ]; then
         $SWIFT_LINT \
             --quiet \
 	    --output $PROJECT_ROOT/.githooks/output/swiftlint.result \
