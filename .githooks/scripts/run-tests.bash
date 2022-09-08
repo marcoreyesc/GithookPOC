@@ -8,7 +8,7 @@ xcodebuild \
   -sdk iphonesimulator \
   -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.5' \
   -quiet \
-  test >/dev/null
+  test | sed '/error:/,/^[[:digit:]] errors? generated/ p'
 if [ $? -ne 0 ]; then
   echo "Test failed"
   exit 1
