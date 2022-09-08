@@ -4,11 +4,11 @@ PROJECT_ROOT=$(git rev-parse --show-toplevel)
 
 #Comenta la seccion de codigo que quieras deshabilitar 
 
-echo "Running branch name validation"
+#echo "Running branch name validation"
 source $PROJECT_ROOT/.githooks/scripts/run-name_validation.sh
 
-echo "Running swiftlint hook.."
+#echo "Running swiftlint hook.."
 source $PROJECT_ROOT/.githooks/scripts/run-swiftlint.bash
 
-echo "Running unit tests"
+#echo "Running unit tests"
 source $PROJECT_ROOT/.githooks/scripts/run-tests.bash
