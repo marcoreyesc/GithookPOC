@@ -19,8 +19,8 @@ fi
 #fi
 
 #echo "Running unit tests"
-source $PROJECT_ROOT/.githooks/scripts/run-tests.bash
-if [ $? -ne 0 ]; then
- echo "Tests must pass before commit!"
- exit 1
-fi
+#source $PROJECT_ROOT/.githooks/scripts/run-tests.bash
+#if [ $? -ne 0 ]; then
+# echo "Tests must pass before commit!"
+# exit 1
+#fi
