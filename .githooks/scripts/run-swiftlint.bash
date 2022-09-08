@@ -15,14 +15,16 @@ if [[ -e "${SWIFT_LINT}" ]]; then
         exit 0
     fi
     #echo "Found $count lintable files! Linting now.."
-    $SWIFT_LINT \
-	--quiet \
-	--output $PROJECT_ROOT/.githooks/output/swiftlint.result \
-	--use-script-input-files \
-	--strict \
-	--config .swiftlint.yml
-    if [ $? -ne 0 ]; then
- 	echo "SwiftLint has warnings see ouput file: ${PROJECT_ROOT}/.githooks/output/swiftlint.result"
-	exit 1
+    if ["$count" -ne 0]; then
+        $SWIFT_LINT \
+            --quiet \
+	    --output $PROJECT_ROOT/.githooks/output/swiftlint.result \
+	    --use-script-input-files \
+	    --strict \
+	    --config .swiftlint.yml
+        if [ $? -ne 0 ]; then
+ 	    echo "SwiftLint has warnings see ouput file: ${PROJECT_ROOT}/.githooks/output/swiftlint.result"
+	    exit 1
+        fi
     fi
 fi
