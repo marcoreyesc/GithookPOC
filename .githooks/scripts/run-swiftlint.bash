@@ -11,18 +11,18 @@ if [[ -e "${SWIFT_LINT}" ]]; then
         count=$((count + 1))
     done < <(git diff --name-only --cached --diff-filter=d | grep ".swift$")
     export SCRIPT_INPUT_FILE_COUNT=$count
-
+    if [ "$count" -eq 0 ]; then
+        exit 0
+    fi
     #echo "Found $count lintable files! Linting now.."
     $SWIFT_LINT \
+	--quiet \
 	--output $PROJECT_ROOT/.githooks/output/swiftlint.result \
 	--use-script-input-files \
 	--strict \
 	--config .swiftlint.yml
-    RESULT=$? # swiftline exit value is number of errors
-
-    exit $RESULT
-else
-    #echo "⚠️  WARNING: SwiftLint not found in $SWIFT_LINT"
-    #echo "⚠️  You might want to edit .git/hooks/pre-commit to locate your swiftlint"
-    exit 0
+    if [ $? -ne 0 ]; then
+ 	echo "SwiftLint has warnings see ouput file: ${PROJECT_ROOT}/.githooks/output/swiftlint.result"
+	exit 1
+    fi
 fi
