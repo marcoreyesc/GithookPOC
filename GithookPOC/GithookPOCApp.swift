@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct GithookPOCApp: App {
+    init() {
+        _ = MFUtilities()
+        print("asdass")
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()

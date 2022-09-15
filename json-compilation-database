@@ -1,0 +1,23 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace GithookPOC.xcworkspace -scheme GithookPOC -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11,OS=15.5" COMPILER_INDEX_STORE_ENABLE=NO
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Build settings from command line:
+    COMPILER_INDEX_STORE_ENABLE = NO
+    SDKROOT = iphonesimulator15.5
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: ab8df5d80ba3adf0dae210aeda652a32
+Build description path: /Users/marcoreyes/dev/GithookPOC/build/XCBuildData/ab8df5d80ba3adf0dae210aeda652a32-desc.xcbuild
+
+note: Build preparation complete
+note: Building targets in dependency order
+/Users/marcoreyes/dev/GithookPOC/Pods/Target Support Files/Pods-GithookPOC/Pods-GithookPOC.debug.xcconfig:1:1: error: unable to open file (in target "GithookPOC" in project "GithookPOC")
+/Users/marcoreyes/dev/GithookPOC/Pods/Target Support Files/Pods-GithookPOC/Pods-GithookPOC.debug.xcconfig:1:1: error: unable to open file (in target "GithookPOC" in project "GithookPOC")
+/Users/marcoreyes/dev/GithookPOC/Pods/Target Support Files/Pods-GithookPOC/Pods-GithookPOC.debug.xcconfig:1:1: error: unable to open file (in target "GithookPOC" in project "GithookPOC")

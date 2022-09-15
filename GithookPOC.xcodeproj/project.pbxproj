@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C82A6E528CBA5C800C52085 /* MFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C82A6E328CBA5C800C52085 /* MFUtilities.m */; };
 		0CA0941F28C65926003E6806 /* GithookPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0941E28C65926003E6806 /* GithookPOCApp.swift */; };
 		0CA0942128C65926003E6806 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0942028C65926003E6806 /* ContentView.swift */; };
 		0CA0942328C65927003E6806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CA0942228C65927003E6806 /* Assets.xcassets */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C82A6E228CBA5C700C52085 /* GithookPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GithookPOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C82A6E328CBA5C800C52085 /* MFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUtilities.m; sourceTree = "<group>"; };
+		0C82A6E428CBA5C800C52085 /* MFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtilities.h; sourceTree = "<group>"; };
 		0CA0941B28C65926003E6806 /* GithookPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithookPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA0941E28C65926003E6806 /* GithookPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithookPOCApp.swift; sourceTree = "<group>"; };
 		0CA0942028C65926003E6806 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0C82A6DA28CB9FE700C52085 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				0C82A6E428CBA5C800C52085 /* MFUtilities.h */,
+				0C82A6E328CBA5C800C52085 /* MFUtilities.m */,
+				0C82A6E228CBA5C700C52085 /* GithookPOC-Bridging-Header.h */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
 		0CA0941228C65926003E6806 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +135,7 @@
 		0CA0941D28C65926003E6806 /* GithookPOC */ = {
 			isa = PBXGroup;
 			children = (
+				0C82A6DA28CB9FE700C52085 /* Sample */,
 				0CA0941E28C65926003E6806 /* GithookPOCApp.swift */,
 				0CA0942028C65926003E6806 /* ContentView.swift */,
 				0CA0942228C65927003E6806 /* Assets.xcassets */,
@@ -164,7 +179,6 @@
 				D8D6304B7AF3A0CC067E7678 /* Pods-GithookPOCTests.debug.xcconfig */,
 				6820FECA4A016694AFDE1DC1 /* Pods-GithookPOCTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -239,6 +253,7 @@
 				TargetAttributes = {
 					0CA0941A28C65926003E6806 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					0CA0942A28C65928003E6806 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -370,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C82A6E528CBA5C800C52085 /* MFUtilities.m in Sources */,
 				0CA0942128C65926003E6806 /* ContentView.swift in Sources */,
 				0CA0941F28C65926003E6806 /* GithookPOCApp.swift in Sources */,
 			);
@@ -528,9 +544,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GithookPOC/Preview Content\"";
+				DEVELOPMENT_TEAM = YUSL8V383S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -546,6 +564,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.globant.GithookPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GithookPOC/Sample/GithookPOC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -557,6 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GithookPOC/Preview Content\"";
@@ -575,6 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.globant.GithookPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GithookPOC/Sample/GithookPOC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
